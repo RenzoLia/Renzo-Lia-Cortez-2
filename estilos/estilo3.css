@@ -1,0 +1,155 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%; /*esto es para que todo el font-size valga 10px o 1rem*/
+}
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 40px auto;
+    background: linear-gradient(90deg, rgba(175,136,201,1) 22%, rgba(253,29,29,1) 69%, rgba(222,226,84,1) 100%);
+}
+.main
+{
+    
+    position: relative;
+    font-size: 1.75rem;
+    min-height: 100vh;
+    background: radial-gradient(#f0483a, #d10a20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    z-index: 1000;
+
+}
+.main header img
+{
+    max-width: 150px;
+}
+.main header .logo
+{
+    display: flex;
+    flex-direction: column;
+}
+.main header .nombre-empresa
+{
+    margin: 0;
+    padding: 0 42px;
+}
+.main header .logo 
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+}
+.main header nav
+{
+    display: flex; 
+}
+.main nav .nav-link
+{
+    text-decoration: none;
+    margin-left: 40px;
+    color: #fff;
+}
+.main nav .nav-link:hover
+{
+   color: #77d61c;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.content .texto
+{
+    width: 100%;
+    max-width: 600px;
+
+}
+.content .texto h2
+{
+   color: #fff;
+   font-size: 2em; /*esto es como decir 9rem*/ 
+   font-weight: 300;
+   margin: 0;
+}
+.content .texto p
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 110px;
+}
+.content .imagen img
+{
+    max-width: 550px;
+    border-radius: 110px;
+}
+.content .imagen 
+{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 30px 180px;
+    flex-direction: column;
+
+}
+.footer .sci
+{
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    color: #fff;
+    font-size: 3em;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.25s;
+}
+.sci li a:hover
+{
+    transform: translateY(-5px);
+}
+.footer h2
+{
+    font-size: 2em;
+    color: #fff;
+}
